@@ -5,8 +5,8 @@ app = Flask(__name__)
 dicionario = {'lista_news': ['Lista ainda não foi carregada. [Para carregar utilize endpoint "/savenews"]']}
 
 @app.route('/')
-def localhost():
-    return render_template('localhost.html');
+def index():
+    return render_template('index.html');
 
 @app.route('/topnews')
 def topnews():
